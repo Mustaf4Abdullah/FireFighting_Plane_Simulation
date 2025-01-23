@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\FireFighting_Plane_Simulation.props" />
+</Project>

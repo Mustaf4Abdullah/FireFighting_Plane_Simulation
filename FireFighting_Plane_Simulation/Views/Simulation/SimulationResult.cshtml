@@ -1,0 +1,163 @@
+﻿@model FireFighting_Plane_Simulation.Models.Result
+
+@{
+    ViewData["Title"] = "Simulation Result";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* Background styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://us.123rf.com/450wm/kucingliarz/kucingliarz2310/kucingliarz231012603/215754522-firefighters-fighting-the-fire-in-the-forest-vector-illustration-in-flat-style.jpg?ver=6');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        /* Centering content */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            backdrop-filter: blur(5px);
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for contrast */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Heading styles */
+        h2, h3 {
+            margin: 10px 0;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.5em;
+        }
+
+        h3 {
+            font-size: 1.8em;
+        }
+
+        /* Data section */
+        .data-section p {
+            font-size: 1.2em;
+            margin: 5px 0;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Lists styling */
+        .lists-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .list-section {
+            flex: 1 1 calc(50% - 20px);
+            max-width: 45%;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+            ul li {
+                background: rgba(255, 255, 255, 0.1);
+                padding: 10px;
+                margin: 5px 0;
+                border-radius: 5px;
+                font-size: 1.2em;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            }
+
+        /* Refill Logs container */
+        .refill-logs {
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        /* Button styling */
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background-color: #ff5722;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            margin-top: 20px;
+            transition: background 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+            .btn:hover {
+                background-color: #e64a19;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Simulation Result</h2>
+
+        <div class="data-section">
+            <p><strong>Total Time:</strong> @Model.TotalTime minutes</p>
+            <p><strong>Total Fuel Used:</strong> @Model.TotalFuelUsed liters</p>
+            <p><strong>Total Water Used:</strong> @Model.TotalWaterUsed liters</p>
+            <p><strong>Total Distance:</strong> @Model.TotalDistance km</p>
+            <p><strong>Refill Count:</strong> @Model.RefillCount</p>
+        </div>
+
+        <div class="lists-container">
+            <div class="list-section">
+                <h3>Visited Regions</h3>
+                <ul>
+                    @foreach (var region in Model.VisitedRegions)
+                    {
+                        <li>@region</li>
+                    }
+                </ul>
+            </div>
+
+            <div class="list-section">
+                <h3>Used Routes</h3>
+                <ul>
+                    @foreach (var route in Model.UsedRoutes)
+                    {
+                        <li>@route</li>
+                    }
+                </ul>
+            </div>
+        </div>
+
+        <div class="refill-logs">
+            <h3>Refill Logs</h3>
+            <ul>
+                @foreach (var log in Model.RefillLog)
+                {
+                    <li>@log</li>
+                }
+            </ul>
+        </div>
+
+        <a href="@Url.Action("VisualSimulation", "Simulation")" class="btn">View Visual Simulation</a>
+    </div>
+</body>
+</html>

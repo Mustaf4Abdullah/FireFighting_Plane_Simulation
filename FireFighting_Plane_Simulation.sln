@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35323.107
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireFighting_Plane_Simulation", "FireFighting_Plane_Simulation\FireFighting_Plane_Simulation.csproj", "{5C1611DF-2621-4772-94AD-D552994848EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C1611DF-2621-4772-94AD-D552994848EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C1611DF-2621-4772-94AD-D552994848EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C1611DF-2621-4772-94AD-D552994848EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C1611DF-2621-4772-94AD-D552994848EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB93565A-33A6-49E0-B88A-C08C61D87D51}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,376 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|c:\\users\\mustafa\\source\\repos\\firefighting_plane_simulation\\firefighting_plane_simulation\\controllers\\simulationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|solutionrelative:firefighting_plane_simulation\\controllers\\simulationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|c:\\users\\mustafa\\source\\repos\\firefighting_plane_simulation\\firefighting_plane_simulation\\views\\simulation\\visualsimulation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|solutionrelative:firefighting_plane_simulation\\views\\simulation\\visualsimulation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|c:\\users\\mustafa\\source\\repos\\firefighting_plane_simulation\\firefighting_plane_simulation\\models\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|solutionrelative:firefighting_plane_simulation\\models\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|c:\\users\\mustafa\\source\\repos\\firefighting_plane_simulation\\firefighting_plane_simulation\\helpers\\routehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|solutionrelative:firefighting_plane_simulation\\helpers\\routehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|c:\\users\\mustafa\\source\\repos\\firefighting_plane_simulation\\firefighting_plane_simulation\\images\\plane.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|solutionrelative:firefighting_plane_simulation\\images\\plane.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|c:\\users\\mustafa\\source\\repos\\firefighting_plane_simulation\\firefighting_plane_simulation\\views\\simulation\\startsimulation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|solutionrelative:firefighting_plane_simulation\\views\\simulation\\startsimulation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|c:\\users\\mustafa\\source\\repos\\firefighting_plane_simulation\\firefighting_plane_simulation\\views\\simulation\\simulationresult.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|solutionrelative:firefighting_plane_simulation\\views\\simulation\\simulationresult.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|c:\\users\\mustafa\\source\\repos\\firefighting_plane_simulation\\firefighting_plane_simulation\\views\\simulation\\uploadfile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|solutionrelative:firefighting_plane_simulation\\views\\simulation\\uploadfile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|c:\\users\\mustafa\\source\\repos\\firefighting_plane_simulation\\firefighting_plane_simulation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|solutionrelative:firefighting_plane_simulation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|c:\\users\\mustafa\\source\\repos\\firefighting_plane_simulation\\firefighting_plane_simulation\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|solutionrelative:firefighting_plane_simulation\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|c:\\users\\mustafa\\source\\repos\\firefighting_plane_simulation\\firefighting_plane_simulation\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|solutionrelative:firefighting_plane_simulation\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|c:\\users\\mustafa\\source\\repos\\firefighting_plane_simulation\\firefighting_plane_simulation\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|solutionrelative:firefighting_plane_simulation\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|c:\\users\\mustafa\\source\\repos\\firefighting_plane_simulation\\firefighting_plane_simulation\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|solutionrelative:firefighting_plane_simulation\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|c:\\users\\mustafa\\source\\repos\\firefighting_plane_simulation\\firefighting_plane_simulation\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|solutionrelative:firefighting_plane_simulation\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|c:\\users\\mustafa\\source\\repos\\firefighting_plane_simulation\\firefighting_plane_simulation\\models\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|solutionrelative:firefighting_plane_simulation\\models\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|c:\\users\\mustafa\\source\\repos\\firefighting_plane_simulation\\firefighting_plane_simulation\\models\\simulationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|solutionrelative:firefighting_plane_simulation\\models\\simulationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|c:\\users\\mustafa\\source\\repos\\firefighting_plane_simulation\\firefighting_plane_simulation\\models\\path.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|solutionrelative:firefighting_plane_simulation\\models\\path.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|c:\\users\\mustafa\\source\\repos\\firefighting_plane_simulation\\firefighting_plane_simulation\\models\\plane.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|solutionrelative:firefighting_plane_simulation\\models\\plane.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|c:\\users\\mustafa\\source\\repos\\firefighting_plane_simulation\\firefighting_plane_simulation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|solutionrelative:firefighting_plane_simulation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|c:\\users\\mustafa\\source\\repos\\firefighting_plane_simulation\\firefighting_plane_simulation\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|solutionrelative:firefighting_plane_simulation\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|c:\\users\\mustafa\\source\\repos\\firefighting_plane_simulation\\firefighting_plane_simulation\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|solutionrelative:firefighting_plane_simulation\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|c:\\users\\mustafa\\source\\repos\\firefighting_plane_simulation\\firefighting_plane_simulation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5C1611DF-2621-4772-94AD-D552994848EE}|FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation.csproj|solutionrelative:firefighting_plane_simulation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "FireFighting_Plane_Simulation\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "FireFighting_Plane_Simulation\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-25T22:26:49.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "FireFighting_Plane_Simulation\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "FireFighting_Plane_Simulation\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-25T22:26:46.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SimulationController.cs",
+              "DocumentMoniker": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Controllers\\SimulationController.cs",
+              "RelativeDocumentMoniker": "FireFighting_Plane_Simulation\\Controllers\\SimulationController.cs",
+              "ToolTip": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Controllers\\SimulationController.cs",
+              "RelativeToolTip": "FireFighting_Plane_Simulation\\Controllers\\SimulationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T15:53:23.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "FireFighting_Plane_Simulation\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "FireFighting_Plane_Simulation\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-25T22:25:23.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "FireFighting_Plane_Simulation\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "FireFighting_Plane_Simulation\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-25T22:25:21.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "FireFighting_Plane_Simulation\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "FireFighting_Plane_Simulation\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-25T22:25:14.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "FireFighting_Plane_Simulation\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "FireFighting_Plane_Simulation\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-25T22:24:16.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VisualSimulation.cshtml",
+              "DocumentMoniker": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Views\\Simulation\\VisualSimulation.cshtml",
+              "RelativeDocumentMoniker": "FireFighting_Plane_Simulation\\Views\\Simulation\\VisualSimulation.cshtml",
+              "ToolTip": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Views\\Simulation\\VisualSimulation.cshtml",
+              "RelativeToolTip": "FireFighting_Plane_Simulation\\Views\\Simulation\\VisualSimulation.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-24T15:38:20.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SimulationViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Models\\SimulationViewModel.cs",
+              "RelativeDocumentMoniker": "FireFighting_Plane_Simulation\\Models\\SimulationViewModel.cs",
+              "ToolTip": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Models\\SimulationViewModel.cs",
+              "RelativeToolTip": "FireFighting_Plane_Simulation\\Models\\SimulationViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T14:58:06.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Result.cs",
+              "DocumentMoniker": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Models\\Result.cs",
+              "RelativeDocumentMoniker": "FireFighting_Plane_Simulation\\Models\\Result.cs",
+              "ToolTip": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Models\\Result.cs",
+              "RelativeToolTip": "FireFighting_Plane_Simulation\\Models\\Result.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T15:52:11.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Region.cs",
+              "DocumentMoniker": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Models\\Region.cs",
+              "RelativeDocumentMoniker": "FireFighting_Plane_Simulation\\Models\\Region.cs",
+              "ToolTip": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Models\\Region.cs",
+              "RelativeToolTip": "FireFighting_Plane_Simulation\\Models\\Region.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T15:14:03.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Plane.cs",
+              "DocumentMoniker": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Models\\Plane.cs",
+              "RelativeDocumentMoniker": "FireFighting_Plane_Simulation\\Models\\Plane.cs",
+              "ToolTip": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Models\\Plane.cs",
+              "RelativeToolTip": "FireFighting_Plane_Simulation\\Models\\Plane.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T15:33:19.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Path.cs",
+              "DocumentMoniker": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Models\\Path.cs",
+              "RelativeDocumentMoniker": "FireFighting_Plane_Simulation\\Models\\Path.cs",
+              "ToolTip": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Models\\Path.cs",
+              "RelativeToolTip": "FireFighting_Plane_Simulation\\Models\\Path.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T15:19:22.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Program.cs",
+              "RelativeDocumentMoniker": "FireFighting_Plane_Simulation\\Program.cs",
+              "ToolTip": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Program.cs",
+              "RelativeToolTip": "FireFighting_Plane_Simulation\\Program.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAIwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T15:22:34.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SimulationResult.cshtml",
+              "DocumentMoniker": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Views\\Simulation\\SimulationResult.cshtml",
+              "RelativeDocumentMoniker": "FireFighting_Plane_Simulation\\Views\\Simulation\\SimulationResult.cshtml",
+              "ToolTip": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Views\\Simulation\\SimulationResult.cshtml",
+              "RelativeToolTip": "FireFighting_Plane_Simulation\\Views\\Simulation\\SimulationResult.cshtml",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAAAKMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-15T01:29:59.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RouteHelper.cs",
+              "DocumentMoniker": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Helpers\\RouteHelper.cs",
+              "RelativeDocumentMoniker": "FireFighting_Plane_Simulation\\Helpers\\RouteHelper.cs",
+              "ToolTip": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Helpers\\RouteHelper.cs",
+              "RelativeToolTip": "FireFighting_Plane_Simulation\\Helpers\\RouteHelper.cs",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAAABYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T15:52:45.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "plane.png",
+              "DocumentMoniker": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\images\\plane.png",
+              "RelativeDocumentMoniker": "FireFighting_Plane_Simulation\\images\\plane.png",
+              "ToolTip": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\images\\plane.png",
+              "RelativeToolTip": "FireFighting_Plane_Simulation\\images\\plane.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-12-25T03:30:18.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UploadFile.cshtml",
+              "DocumentMoniker": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Views\\Simulation\\UploadFile.cshtml",
+              "RelativeDocumentMoniker": "FireFighting_Plane_Simulation\\Views\\Simulation\\UploadFile.cshtml",
+              "ToolTip": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Views\\Simulation\\UploadFile.cshtml",
+              "RelativeToolTip": "FireFighting_Plane_Simulation\\Views\\Simulation\\UploadFile.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-14T15:22:09.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StartSimulation.cshtml",
+              "DocumentMoniker": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Views\\Simulation\\StartSimulation.cshtml",
+              "RelativeDocumentMoniker": "FireFighting_Plane_Simulation\\Views\\Simulation\\StartSimulation.cshtml",
+              "ToolTip": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Views\\Simulation\\StartSimulation.cshtml",
+              "RelativeToolTip": "FireFighting_Plane_Simulation\\Views\\Simulation\\StartSimulation.cshtml",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAAJAAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-15T01:19:19.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "FireFighting_Plane_Simulation\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "FireFighting_Plane_Simulation\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T15:38:42.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\appsettings.json",
+              "RelativeDocumentMoniker": "FireFighting_Plane_Simulation\\appsettings.json",
+              "ToolTip": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\appsettings.json",
+              "RelativeToolTip": "FireFighting_Plane_Simulation\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-15T00:54:18.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "FireFighting_Plane_Simulation\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\mustafa\\source\\repos\\FireFighting_Plane_Simulation\\FireFighting_Plane_Simulation\\Properties\\launchSettings.json",
+              "RelativeToolTip": "FireFighting_Plane_Simulation\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-15T13:53:13.412Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

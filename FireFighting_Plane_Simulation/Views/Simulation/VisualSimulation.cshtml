@@ -1,0 +1,301 @@
+﻿@model FireFighting_Plane_Simulation.Models.SimulationViewModel
+
+@{
+    ViewData["Title"] = "Visual Simulation";
+}
+@using Newtonsoft.Json
+
+<h2>Firefighting Plane Simulation</h2>
+
+<div id="controls">
+    <button id="start-simulation">Start Simulation</button>
+</div>
+<div id="simulation-container" style="position: relative; width: 1600px; height: 1100px; border: 1px solid #000;"></div>
+
+<div id="plane-info">
+    <h3>Plane Information</h3>
+    <p><strong>Current Region:</strong> <span id="current-region">N/A</span></p>
+    <p><strong>Fuel Level:</strong> <span id="fuel-level">N/A</span></p>
+    <p><strong>Water Level:</strong> <span id="water-level">N/A</span></p>
+    <p><strong>Distance Traveled:</strong> <span id="distance-traveled">N/A</span></p>
+    <p><strong>Total Time:</strong> <span id="total-time">N/A</span></p>
+    <h4>Logs:</h4>
+    <ul id="logs"></ul>
+</div>
+<!-- Simulation Done Overlay -->
+<div id="simulation-done-overlay" style="display: none;">
+    <div id="simulation-done-message" style="text-align: center; background: rgba(0, 0, 0, 0.8); color: white; border-radius: 10px; padding: 30px; width: 300px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        <h2>Simulation is Done</h2>
+        <button id="close-overlay" style="padding: 10px 20px; background-color: #ff5555; color: white; border: none; border-radius: 5px;">Close</button>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const regions = @Html.Raw(JsonConvert.SerializeObject(Model.Regions));
+        const routes = @Html.Raw(JsonConvert.SerializeObject(Model.Routes));
+        const usedRoutes = @Html.Raw(JsonConvert.SerializeObject(ViewBag.Result?.UsedRoutes ?? new List<string>()));
+
+        const container = document.getElementById('simulation-container');
+        const planeInfo = {
+            currentRegion: 'B0',
+            fuel: 5000,
+            water: 20000,
+            distanceTraveled: 0,
+            totalTime: 0,
+        };
+        const regionPositions = {};
+        let planeSpeed = 1000;
+
+        if (!regions || !routes) {
+            console.error("Regions or Routes data is missing!");
+            return;
+        }
+
+        const updatePlaneInfoDisplay = () => {
+            document.getElementById('current-region').innerText = planeInfo.currentRegion;
+            document.getElementById('fuel-level').innerText = `${planeInfo.fuel} L`;
+            document.getElementById('water-level').innerText = `${planeInfo.water} L`;
+            document.getElementById('distance-traveled').innerText = `${planeInfo.distanceTraveled} km`;
+            document.getElementById('total-time').innerText = `${planeInfo.totalTime} s`;
+        };
+
+        const logAction = (message) => {
+            const logs = document.getElementById('logs');
+            const logItem = document.createElement('li');
+            logItem.innerText = message;
+            logs.appendChild(logItem);
+        };
+
+        // Initialize regions
+        regions.forEach((region, index) => {
+            const regionContainer = document.createElement('div');
+            regionContainer.style.position = 'absolute';
+            regionContainer.style.textAlign = 'center';
+            regionContainer.style.width = '60px';
+
+            const regionIcon = document.createElement('img');
+            regionIcon.src = region.Name === 'B0' ?
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnfMfoU0RHev5CjEzRnEjdsKklaL8JAmdKdw&s' :
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUDgYs5qbQRK0lTKZkoJNQ9q-XjGaLsxVS0w&s';
+            regionIcon.alt = region.Name;
+            regionIcon.style.width = '60px';
+            regionIcon.style.height = '60px';
+            regionIcon.style.borderRadius = region.Name === 'B0' ? '0' : '50%';
+            regionIcon.style.border = region.Name === 'B0' ? 'none' : '2px solid red';
+
+            const label = document.createElement('div');
+            label.innerText = `${region.Name}; ${region.Severity}`;
+            label.style.position = 'relative';
+            label.style.top = '5px';
+            label.style.fontSize = '12px';
+            label.style.color = 'black';
+
+            const baseX = 60;
+            const baseY = container.offsetHeight / 2;
+            const regionWidth = 350;
+            const regionHeight = 300;
+
+            let x, y;
+            if (region.Name === 'B0') {
+                x = baseX;
+                y = baseY;
+            } else {
+                const row = Math.floor((index - 1) / 4);
+                const col = (index - 1) % 4;
+                x = baseX + regionWidth + col * regionWidth;
+                y = baseY - 1.5 * regionHeight + row * regionHeight;
+            }
+            regionContainer.style.left = `${x}px`;
+            regionContainer.style.top = `${y}px`;
+
+            regionContainer.appendChild(regionIcon);
+            regionContainer.appendChild(label);
+
+            container.appendChild(regionContainer);
+            regionPositions[region.Name] = { x, y, severity: region.Severity };
+        });
+
+        // Initialize routes
+        routes.forEach(route => {
+            const fromPos = regionPositions[route.FromRegion];
+            const toPos = regionPositions[route.ToRegion];
+
+            if (fromPos && toPos) {
+                const line = document.createElement('div');
+                line.style.position = 'absolute';
+                line.style.backgroundColor = 'black';
+                line.style.width = `${Math.hypot(toPos.x - fromPos.x, toPos.y - fromPos.y)}px`;
+                line.style.height = '2px';
+                line.style.transform = `rotate(${Math.atan2(toPos.y - fromPos.y, toPos.x - fromPos.x) * 180 / Math.PI}deg)`;
+                line.style.left = `${fromPos.x}px`;
+                line.style.top = `${fromPos.y}px`;
+                line.style.transformOrigin = '0 0';
+                container.appendChild(line);
+
+                const distanceLabel = document.createElement('div');
+                distanceLabel.innerText = `${route.Distance} km`;
+                distanceLabel.style.position = 'absolute';
+                distanceLabel.style.fontSize = '12px';
+                distanceLabel.style.left = `${(fromPos.x + toPos.x) / 2}px`;
+                distanceLabel.style.top = `${(fromPos.y + toPos.y) / 2}px`;
+                container.appendChild(distanceLabel);
+            }
+        });
+
+        // Plane setup
+        const planeIcon = document.createElement('img');
+        planeIcon.src = 'https://icon2.cleanpng.com/20180422/weq/avtimmxsk.webp';
+        planeIcon.style.position = 'absolute';
+        planeIcon.style.width = '40px';
+        planeIcon.style.height = '40px';
+        planeIcon.style.zIndex = '10';
+        planeIcon.style.transition = `left ${planeSpeed}ms linear, top ${planeSpeed}ms linear`;
+        container.appendChild(planeIcon);
+
+        const simulatePlaneMovement = async () => {
+            for (const route of usedRoutes) {
+                const [from, to] = route.split(' -> ');
+                const fromPosition = regionPositions[from];
+                const toPosition = regionPositions[to];
+                const routeData = routes.find(r => r.FromRegion === from && r.ToRegion === to);
+
+                if (!fromPosition || !toPosition || !routeData) continue;
+                planeIcon.style.left = `${fromPosition.x}px`;
+                planeIcon.style.top = `${fromPosition.y}px`;
+                if (from === 'B0') {
+                    await new Promise(resolve => setTimeout(resolve, 1000));
+                }
+                await new Promise(resolve => setTimeout(resolve, 500));
+
+
+                planeIcon.style.left = `${toPosition.x}px`;
+                planeIcon.style.top = `${toPosition.y}px`;
+                await new Promise(resolve => setTimeout(resolve, 500));
+
+
+                if (from === 'B0') {
+                    logAction('Refueled ');                   
+
+                    planeInfo.fuel = 5000;
+                    planeInfo.water = 20000;
+                    logAction("Refueled and refilled at B0.");
+                    updatePlaneInfoDisplay();
+                    await new Promise(resolve => setTimeout(resolve, 500));
+
+                }
+                planeInfo.fuel -= routeData.Distance * 10;
+                planeInfo.totalTime += routeData.TimeRequired;
+                planeInfo.distanceTraveled += routeData.Distance;
+                planeInfo.currentRegion = to;
+                updatePlaneInfoDisplay();
+
+                logAction(`Traveled from ${from} to ${to}. Fuel: -${routeData.FuelRequired} L`);
+
+                const regionData = regions.find(r => r.Name === to);
+
+                if (regionData && regionData.Severity > 0) {
+                    for (let i = 0; i < regionData.Severity; i++) {
+                        await new Promise(resolve => setTimeout(resolve, 2000));
+                        planeInfo.water -= 1000;
+                        planeInfo.fuel -= 100;
+                        planeInfo.totalTime += 10;
+                        updatePlaneInfoDisplay();
+                    }
+                    regionData.Severity = 0;
+
+                    const icon = container.querySelector(`img[alt='${regionData.Name}']`);
+                    icon.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu4NM-cQKCZf56RFldTpSMeD-2GfPKwB2Vmg&s';
+                    logAction(`Fire at ${to} extinguished.`);
+                }
+                
+            }
+            const basePosition = regionPositions['B0'];
+            planeIcon.style.left = `${basePosition.x}px`;
+            planeIcon.style.top = `${basePosition.y}px`;
+            logAction('Returning to base B0...');
+            planeInfo.currentRegion = 'B0';
+            updatePlaneInfoDisplay();
+            const overlay = document.getElementById('simulation-done-overlay');
+            overlay.style.display = 'block';  // Show the overlay
+
+        };
+
+
+        document.getElementById('start-simulation').addEventListener('click', simulatePlaneMovement);
+
+        document.getElementById('increase-speed').addEventListener('click', () => {
+            planeSpeed = Math.max(100, planeSpeed - 200);
+            planeIcon.style.transition = `left ${planeSpeed}ms linear, top ${planeSpeed}ms linear`;
+        });
+
+        updatePlaneInfoDisplay();
+    });
+</script>
+
+<style>
+    body {
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+
+    #simulation-container {
+        background-color: white;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+    }
+
+    #plane-info {
+        background-color: rgba(249, 249, 249, 0.9);
+        color: black;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        position: fixed;
+        top: 50px;
+        left: 50px;
+    }
+
+    .region-icon {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 60px;
+        font-size: 12px;
+        color: white;
+        font-weight: bold;
+        transition: all 0.5s ease;
+    }
+
+    .region-icon.red {
+        background-color: red;
+        box-shadow: 0 0 10px red;
+    }
+
+    .region-icon.green {
+        background-color: green;
+        box-shadow: 0 0 10px green;
+        animation: pulse 1.5s infinite;
+    }
+
+    
+
+    button {
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    button:hover {
+        background-color: darkred;
+        transform: scale(1.05);
+    }
+</style>
